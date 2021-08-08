@@ -1,0 +1,199 @@
+{
+    "type": "object",
+    "properties": {
+        "subscriptionId": {
+            "type": "string"
+        },
+        "notificationId": {
+            "type": "integer"
+        },
+        "id": {
+            "type": "string"
+        },
+        "eventType": {
+            "type": "string"
+        },
+        "publisherId": {
+            "type": "string"
+        },
+        "message": {
+            "type": "object",
+            "properties": {
+                "text": {
+                    "type": "string"
+                },
+                "html": {
+                    "type": "string"
+                },
+                "markdown": {
+                    "type": "string"
+                }
+            }
+        },
+        "detailedMessage": {
+            "type": "object",
+            "properties": {
+                "text": {
+                    "type": "string"
+                },
+                "html": {
+                    "type": "string"
+                },
+                "markdown": {
+                    "type": "string"
+                }
+            }
+        },
+        "resource": {
+            "type": "object",
+            "properties": {
+                "uri": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "integer"
+                },
+                "buildNumber": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string"
+                },
+                "startTime": {
+                    "type": "string"
+                },
+                "finishTime": {
+                    "type": "string"
+                },
+                "reason": {
+                    "type": "string"
+                },
+                "status": {
+                    "type": "string"
+                },
+                "drop": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "log": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "sourceGetVersion": {
+                    "type": "string"
+                },
+                "lastChangedBy": {
+                    "type": "object",
+                    "properties": {
+                        "displayName": {
+                            "type": "string"
+                        },
+                        "id": {
+                            "type": "string"
+                        },
+                        "uniqueName": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "retainIndefinitely": {
+                    "type": "boolean"
+                },
+                "definition": {
+                    "type": "object",
+                    "properties": {
+                        "definitionType": {
+                            "type": "string"
+                        },
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "url": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "requests": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "integer"
+                            },
+                            "url": {
+                                "type": "string"
+                            },
+                            "requestedFor": {
+                                "type": "object",
+                                "properties": {
+                                    "displayName": {
+                                        "type": "string"
+                                    },
+                                    "id": {
+                                        "type": "string"
+                                    },
+                                    "uniqueName": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        },
+                        "required": [
+                            "id",
+                            "url",
+                            "requestedFor"
+                        ]
+                    }
+                }
+            }
+        },
+        "resourceVersion": {
+            "type": "string"
+        },
+        "resourceContainers": {
+            "type": "object",
+            "properties": {
+                "collection": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "baseUrl": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "account": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "baseUrl": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "project": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "baseUrl": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "createdDate": {
+            "type": "string"
+        }
+    }
+}
